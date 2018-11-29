@@ -29,5 +29,7 @@ namespace FinalProject_V2.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<FinalProject_V2.Models.ApplicationUser> ApplicationUsers { get; set; }
     }
 }
