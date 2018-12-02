@@ -15,4 +15,9 @@ namespace FinalProject_V2.Models
 
 
     }
+
+    public class CreateNewGoalModel
+    {
+       
+    }
 }
