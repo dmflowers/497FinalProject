@@ -2,13 +2,15 @@
     ViewBag.Title = "Accounts";
 }
 
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-    <title>Find My Funds</title>
- 
+    <title>@ViewBag.Title</title>
     <style>
 
         {
@@ -130,9 +132,10 @@
             animation: animatezoom 0.6s
         }
 
-            .cancelbtn {
-                width: 100%;
-            }
+        .cancelbtn {
+            width: 100%;
+        }
+
         }
 
         /*Account Card Style*/
@@ -156,15 +159,9 @@
         }
     </style>
 </head>
-<title>@ViewBag.Title</title>
 <body>
-    <!-- Navigation -->
-    <nav class="w3-bar w3-black">
-        <a href="#Home" class="w3-button w3-bar-item">Home</a>
-        <a href="#Accounts" class="w3-button w3-bar-item">Accounts</a>
-        <a href="#GoalTracker" class="w3-button w3-bar-item">Goal Tracker</a>
-        <a href="#Bills" class="w3-button w3-bar-item">Bills</a>
-    </nav>
+
+
     <!-- Page Description -->
     <section class="w3-container w3-center w3-content" style="max-width:600px">
         <h2 class="w3-wide">Find My Funds</h2>
