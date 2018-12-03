@@ -96,6 +96,7 @@ namespace FinalProject_V2.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
 
+
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
@@ -116,5 +117,42 @@ namespace FinalProject_V2.Models
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
+    }
+
+    public class UserModel
+    {
+        public int userID { get; set; }
+
+        public string firstName { get; set; }
+
+        public string lastName { get; set; }
+
+        public string role { get; set; }
+
+        public string password { get; set; }
+    }
+
+    public class TransactionModel
+    {
+        public int transactionID { get; set; }
+
+        public string purchaseDate { get; set; }
+
+        public double amount { get; set; }
+
+        public string purchaseLocation { get; set; }
+
+   }
+    public class AccountsModel
+    {
+        public int accountID { get; set; }
+
+        public string name { get; set; }
+
+        public string description { get; set; }
+
+        public string type { get; set; }
+
+        public double value { get; set; }
     }
 }
